@@ -28,13 +28,13 @@ const logout = () => {
 </script>
 
 <template>
-    <div>
+    <div style="--primary-color: #00528A; --accent-color: #2DD0F8;">
         <Head :title="title" />
 
         <Banner />
 
         <div class="min-h-screen bg-gray-50">
-            <nav class="bg-primary text-white shadow-md">
+            <nav class="text-white shadow-md" style="background-image: linear-gradient(180deg, var(--accent-color) 0%, var(--primary-color) 100%);">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -189,7 +189,7 @@ const logout = () => {
                 </div>
 
                 <!-- Responsive Navigation Menu -->
-                <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden bg-primary-dark">
+                <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden" style="background-image: linear-gradient(180deg, var(--primary-color) 0%, #003a63 100%);">
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')" class="text-white" activeClass="bg-primary-dark border-secondary text-secondary">
                             Dashboard
@@ -286,11 +286,11 @@ const logout = () => {
             </main>
 
             <!-- Footer -->
-            <footer class="bg-primary text-white py-6 mt-auto">
+            <footer class="text-white py-6 mt-auto" style="background-image: linear-gradient(180deg, var(--accent-color) 0%, var(--primary-color) 100%);">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex flex-col md:flex-row justify-between items-center">
                         <div class="mb-4 md:mb-0">
-                            <p class="text-sm">&copy; {{ new Date().getFullYear() }} Tu Empresa</p>
+                            <p class="text-sm">&copy; {{ new Date().getFullYear() }} GRUPO DIVECO</p>
                         </div>
                         <div class="flex space-x-4">
                             <a href="#" class="text-white hover:text-secondary transition">Términos</a>

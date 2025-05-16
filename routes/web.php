@@ -32,4 +32,20 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+    
+    Route::get('/reporte-ventas', function () {
+        return Inertia::render('ReporteVentas');
+    })->name('reporte.ventas');
+    
+    Route::get('/gestion-pagos', function () {
+        return Inertia::render('EnConstruccion', [
+            'title' => 'Gestión de Pagos'
+        ]);
+    })->name('gestion.pagos');
+    
+    Route::get('/analisis-financiero', function () {
+        return Inertia::render('EnConstruccion', [
+            'title' => 'Análisis Financiero'
+        ]);
+    })->name('analisis.financiero');
 });
