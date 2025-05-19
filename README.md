@@ -1,6 +1,6 @@
 # Aplicación Laravel
 
-Esta es una aplicación Laravel desarrollada para Grupo DIVECO.
+Esta es una aplicación Laravel desarrollada para Grupo DIVECO. Entrevista Tecnica de Jonhathan Rolando Rodas Lopez
 
 ## Tecnología
 
